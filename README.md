@@ -31,4 +31,4 @@
 
 http://sukerasparo.com/sp004/font.html
 
-この Chrome 拡張は SukeraSparo 様とは関係ない第三者によって作成されました。この Chrome 拡張についての問い合わせを SukeraSparo 様に送らないようお願いします。
+この Chrome 拡張の作者は SukeraSparo 様とは関係ありません。この Chrome 拡張についての問い合わせを SukeraSparo 様に送らないようお願いします。
