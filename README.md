@@ -27,6 +27,8 @@
 
 ことのはアムリラート開発元の SukeraSparo 様にお礼申し上げます。
 
+http://sukerasparo.com/
+
 ユリアーモのフォントは、SukeraSparo 様が公開されている Web フォントを利用させて頂いています。
 
 http://sukerasparo.com/sp004/font.html
