@@ -32,3 +32,9 @@
 http://sukerasparo.com/sp004/font.html
 
 この Chrome 拡張の作者は SukeraSparo 様とは関係ありません。この Chrome 拡張についての問い合わせを SukeraSparo 様に送らないようお願いします。
+
+
+ライセンス
+----------
+
+Apache 2.0
