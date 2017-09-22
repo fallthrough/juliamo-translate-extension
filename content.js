@@ -136,7 +136,7 @@ class WebTranslateResultRewriter {
         font-family: 'Juliamo';
         src: url('${FONT_URL}');
       }
-      body {
+      * {
         font-family: 'Juliamo' !important;
       }
     `);
