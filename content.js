@@ -139,6 +139,9 @@ class WebTranslateResultRewriter {
       * {
         font-family: 'Juliamo' !important;
       }
+      #google-infowindow * {
+        font-family: arial, sans-serif !important;
+      }
     `);
   }
 }
