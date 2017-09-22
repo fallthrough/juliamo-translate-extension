@@ -122,7 +122,8 @@ class WebTranslateResultRewriter {
   static isEligible() {
     const parser = document.createElement('a');
     parser.href = location.href;
-    return parser.hostname === 'translate.googleusercontent.com';
+    const lang = document.documentElement.lang;
+    return parser.hostname === 'translate.googleusercontent.com' && lang.indexOf('eo-') == 0;
   }
 
   start() {
