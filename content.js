@@ -136,8 +136,10 @@ class WebTranslateResultRewriter {
   static isEligible() {
     const parser = document.createElement('a');
     parser.href = location.href;
-    const lang = document.documentElement.lang;
-    return parser.hostname === 'translate.googleusercontent.com' && lang.indexOf('eo-') == 0;
+    const params = parser.search.substr(1).split('&');
+    return (parser.hostname === 'translate.googleusercontent.com' &&
+            params.indexOf('tl=eo') >= 0 &&
+            params.indexOf('anno=2') < 0);
   }
 
   start() {
@@ -160,6 +162,33 @@ class WebTranslateResultRewriter {
   }
 }
 
+class WebTranslateSourceRewriter {
+  static isEligible() {
+    const parser = document.createElement('a');
+    parser.href = location.href;
+    const params = parser.search.substr(1).split('&');
+    return (parser.hostname === 'translate.googleusercontent.com' &&
+            params.indexOf('tl=eo') >= 0 &&
+            params.indexOf('anno=2') >=0);
+  }
+
+  start() {
+    this.insertStyle_();
+  }
+
+  insertStyle_() {
+    insertStyle(`
+      @font-face {
+        font-family: 'Juliamo';
+        src: url('${FONT_URL}');
+      }
+      .google-src-active-text {
+        font-family: 'Juliamo' !important;
+      }
+    `);
+  }
+}
+
 function main() {
   if (TextTranslateUIRewriter.isEligible()) {
     const rewriter = new TextTranslateUIRewriter();
@@ -169,6 +198,9 @@ function main() {
     rewriter.start();
   } else if (WebTranslateResultRewriter.isEligible()) {
     const rewriter = new WebTranslateResultRewriter();
+    rewriter.start();
+  } else if (WebTranslateSourceRewriter.isEligible()) {
+    const rewriter = new WebTranslateSourceRewriter();
     rewriter.start();
   }
 }
