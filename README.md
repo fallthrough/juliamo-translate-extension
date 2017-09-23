@@ -1,15 +1,20 @@
 ユリアーモ翻訳
 ==============
 
-この Chrome 拡張は [Chrome Web ストア](https://chrome.google.com/webstore/detail/%E3%83%A6%E3%83%AA%E3%82%A2%E3%83%BC%E3%83%A2%E7%BF%BB%E8%A8%B3/lfbkianbbamldlolccijgpjgienikeij) からインストールできます。
-
-
 概要
 ----
 
 「ユリアーモ」はアドベンチャーゲーム「ことのはアムリラート」に登場する、エスペラント語をベースとした人工言語です。
 
 この拡張機能は Google 翻訳のエスペラント語翻訳を利用して、好きなウェブページをユリアーモに翻訳します。
+
+
+インストール
+------------
+
+Chrome を使っている場合: [Chrome Web ストア](https://chrome.google.com/webstore/detail/%E3%83%A6%E3%83%AA%E3%82%A2%E3%83%BC%E3%83%A2%E7%BF%BB%E8%A8%B3/lfbkianbbamldlolccijgpjgienikeij) からインストールできます。
+
+Firefox を使っている場合: [Firefox アドオン](https://addons.mozilla.org/ja/firefox/addon/%E3%83%A6%E3%83%AA%E3%82%A2%E3%83%BC%E3%83%A2%E7%BF%BB%E8%A8%B3/) からインストールできます。
 
 
 使い方
