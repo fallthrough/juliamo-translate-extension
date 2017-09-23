@@ -21,7 +21,7 @@ const ESPERANTO = [
 
 function insertStyle(content) {
   const style = document.createElement('style');
-  style.innerHTML = content;
+  style.appendChild(document.createTextNode(content));
   document.head.appendChild(style);
 }
 
